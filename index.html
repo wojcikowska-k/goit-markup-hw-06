@@ -489,10 +489,13 @@
                 class="newsletter-input"
                 id="newsletter"
                 placeholder="E-mail"
+                name="newsletter"
               />
-              <button class="newsletter-button" type="submit"><a class="link" href="#">Zapisz się</a> <svg class="icon-send" width="24" height="24">
-                <use href="images/icons.svg#icon-icon-send"></use></button>
-             
+              <button class="newsletter-button" type="submit">
+                Zapisz się<svg class="icon-send" width="24" height="24">
+                  <use href="images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
@@ -505,6 +508,38 @@
         <button type="button" class="modal-close-button" data-modal-close>
           X
         </button>
+        <h2 class="modal-title">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal-form">
+          <div class="modal-name">
+            <label class="modal-form-label" for="name">Imie</label>
+            <input class="modal-form-input" id="name" name="name" />
+          </div>
+          <div class="modal-phone">
+            <label class="modal-form-label" for="phone">Telefon</label>
+            <input class="modal-form-input" id="phone" name="phone" />
+          </div>
+          <div class="modal-email">
+            <label class="modal-form-label" for="email">Email</label>
+            <input class="modal-form-input" id="email" name="email" />
+          </div>
+          <div class="modal-comment">
+            <label class="modal-form-label" for="comment">Komentarz</label>
+            <textarea
+              class="modal-form-comment"
+              id="comment"
+              name="comment"
+              rows="8"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </div>
+          <div class="modal-policy">
+            <input id="policy" type="checkbox" name="policy" />
+            <label for="policy"
+              >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności.</a></label
+            >
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>
